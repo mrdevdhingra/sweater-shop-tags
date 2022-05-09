@@ -1,3 +1,5 @@
+
+
 .main{
     padding: 2%;
     border: 2px solid green;
@@ -29,6 +31,7 @@
     font-size: 36pt;
     color: #385d42;
     margin-bottom: 15px;
+    text-align: center;
 }
 
 .was-price{
@@ -47,3 +50,10 @@
     font-weight: 500;
     
 }
+
+@media print {
+    body, page {
+      margin: 0;
+      box-shadow: 0;
+    }
+  }

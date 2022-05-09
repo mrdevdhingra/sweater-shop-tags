@@ -1,3 +1,6 @@
+var element1 = document.getElementById("form");
+    
+
 function testVariable() {
     var strText = document.getElementById("textone").value;          
     var strText1 = document.getElementById("textTWO").value;
@@ -5,9 +8,11 @@ function testVariable() {
     document.getElementById('item-name').textContent = strText;
     document.getElementById('was-price').textContent = strText1;
     document.getElementById('now-price').textContent = strText2; 
-    var element = document.getElementById("form");
-    element.remove();
+    
 }
+
+var element2 = document.getElementById("form2");
+    
 
 function testVariable2() {
     var strText = document.getElementById("textonetwo").value;          
@@ -16,12 +21,13 @@ function testVariable2() {
     document.getElementById('item-name2').textContent = strText;
     document.getElementById('was-price2').textContent = strText1;
     document.getElementById('now-price2').textContent = strText2; 
-    var element = document.getElementById("form2");
-    element.remove();
+    
 }
 
 function display() {
     var element = document.getElementById("printbutton");
     element.remove();
+    element1.remove();
+    element2.remove();
     window.print();
  }

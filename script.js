@@ -24,10 +24,16 @@ function testVariable2() {
     
 }
 
+var backbutton = document.getElementById("back-button");
+
 function display() {
     var element = document.getElementById("printbutton");
+    backbutton.remove();
     element.remove();
     element1.remove();
     element2.remove();
     window.print();
+    
  }
+
+ 
